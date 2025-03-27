@@ -12,19 +12,24 @@ body:
     validations:
       required: false
   - type: textarea
-    id: problem
+    id: task
     attributes:
-      label: Problem
-      description: Is your feature related to a problem?.
-      placeholder: Tell us what the problem is!
+      label: Task
+      description: What is the task to be developed?.
+      placeholder: Be clear and detailed about what developers should do!
     validations:
       required: true
   - type: textarea
-    id: solution
+    id: criteria
     attributes:
-      label: Suggested Solution
-      description: What is the solution you would like?.
-      placeholder: Describe your feature request!
+      label: Acceptance Criteria
+      description: What will mean the issue is complete?
+      placeholder: Provide concrete and concise points!
+      value: |
+        1.
+        2.
+        3.
+        ...
     validations:
       required: true
   - type: checkboxes
