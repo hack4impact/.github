@@ -12,6 +12,8 @@ and orientation.
 We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
+Hack4Impact volunteers must also conduct themselves accordingly to the [Hack4Impact Volunteer Code of Conduct](h4i.notion.site/conduct).
+
 ## Our Standards
 
 Examples of behavior that contributes to a positive environment for our
