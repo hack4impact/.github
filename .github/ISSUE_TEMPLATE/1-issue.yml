@@ -1,7 +1,7 @@
 name: Issue
 description: Create an issue.
 title: "[Issue]: "
-type: ["Task"]
+type: "Task"
 body:
   - type: input
     id: contact
