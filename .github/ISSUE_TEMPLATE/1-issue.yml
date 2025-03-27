@@ -3,10 +3,6 @@ description: Create an issue.
 title: "[Issue]: "
 type: ["Task"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to request a new feature!
   - type: input
     id: contact
     attributes:
