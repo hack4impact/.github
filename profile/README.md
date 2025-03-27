@@ -1,4 +1,4 @@
-# Hack4Impact 👋
+# Hack4Impact 🌐
 
 ## Mission
 Hack4Impact is a student-run 501(c)(3) nonprofit that is committed to building software for nonprofit organizations. We empower engineers, designers, activists, and humanitarians to create lasting and impactful social change, fostering the wider adoption of software as a tool for public interest. Common code for the common good.
