@@ -24,6 +24,19 @@ body:
       placeholder: Tell us what you see!
     validations:
       required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: Walk us through re-creating the bug step by step.
+      placeholder: Provide step by step instructions!
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
   - type: dropdown
     id: browsers
     attributes:
