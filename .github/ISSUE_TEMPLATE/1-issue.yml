@@ -3,14 +3,6 @@ description: Create an issue.
 title: "[Issue]: "
 type: "Task"
 body:
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
     id: task
     attributes:
@@ -26,9 +18,9 @@ body:
       description: What will mean the issue is complete?
       placeholder: Provide concrete and concise points!
       value: |
-        1.
-        2.
-        3.
+        [ ]
+        [ ]
+        [ ]
         ...
     validations:
       required: true
