@@ -1,6 +1,6 @@
 ---
 name: Issue
-about: Describe this issue template's purpose here.
+about: Task developers during project development.
 title: ''
 labels: ''
 assignees: ''
