@@ -15,7 +15,7 @@ body:
     id: task
     attributes:
       label: Task
-      description: What is the task to be developed?.
+      description: What is the task to be developed?
       placeholder: Be clear and detailed about what developers should do!
     validations:
       required: true
