@@ -3,6 +3,12 @@ description: Create an issue.
 title: "[Issue]: "
 type: "Task"
 body:
+  - type: input
+    id: branch
+    attributes:
+      label: Branch Name
+      description: Remember to follow [branch naming convention](https://www.hack4impact.org)
+      placeholder: (featurer|fix)/issue_number-branch-name
   - type: textarea
     id: task
     attributes:
@@ -18,9 +24,9 @@ body:
       description: What will mean the issue is complete?
       placeholder: Provide concrete and concise points!
       value: |
-        [ ]
-        [ ]
-        [ ]
+        - [ ] TODO: Add acceptance criteria
+        - [ ] TODO: Add acceptance criteria
+        - [ ] TODO: Add acceptance criteria
         ...
     validations:
       required: true
