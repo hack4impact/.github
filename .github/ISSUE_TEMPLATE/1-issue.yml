@@ -18,9 +18,9 @@ body:
       description: What will mean the issue is complete?
       placeholder: Provide concrete and concise points!
       value: |
-        []
-        []
-        []
+        [ ]
+        [ ]
+        [ ]
         ...
     validations:
       required: true
