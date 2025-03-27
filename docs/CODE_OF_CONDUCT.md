@@ -10,9 +10,9 @@ nationality, personal appearance, race, religion, or sexual identity
 and orientation.
 
 We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+diverse, inclusive, and healthy community.t
 
-Hack4Impact volunteers must also conduct themselves accordingly to the [Hack4Impact Volunteer Code of Conduct](h4i.notion.site/conduct).
+Hack4Impact volunteers must also conduct themselves accordingly to the [Hack4Impact Volunteer Code of Conduct](https://h4i.notion.site/conduct).
 
 ## Our Standards
 
