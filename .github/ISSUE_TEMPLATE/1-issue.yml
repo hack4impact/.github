@@ -7,7 +7,7 @@ body:
     id: branch
     attributes:
       label: Branch Name
-      description: Remember to follow [branch naming convention](https://www.hack4impact.org)
+      description: Remember to follow [branch naming convention](https://www.hack4impact.org).
       placeholder: (featurer|fix)/issue_number-branch-name
   - type: textarea
     id: task
@@ -30,6 +30,18 @@ body:
         ...
     validations:
       required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Make sure you do all this before you create the issue.
+      options:
+        - label: I have checked for duplicate issues.
+          required: true
+        - label: I have assigned the issue to the correct project board.
+          required: true
+        - label: I have tagged the issue properly.
+          required: true
   - type: checkboxes
     id: terms
     attributes:
