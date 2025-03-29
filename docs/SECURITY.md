@@ -2,10 +2,11 @@
 
 We believe that no technology is perfect and that working with skilled security researchers is crucial in identifying weaknesses.
 
-If you believe you've found a security bug in our service, we'll be happy to work with you to resolve the issue promptly and ensure you are fairly rewarded for your discovery.
+If you believe you've found a security bug in any of our projects, we'll be happy to work with you to resolve the issue promptly and ensure you are fairly rewarded for your discovery.
 
 We will investigate legitimate reports and make every effort to quickly resolve any vulnerability. To encourage responsible reporting, we will not take legal action against you nor ask law enforcement to investigate you providing you comply with the current policy and more generally with the following guideline: Make a good faith effort to avoid privacy violations, destruction of data, and interruption or degradation of our services.
-Eligibility and Responsible Disclosure
+
+### Eligibility and Responsible Disclosure
 
 Only those that meet the following eligibility requirements may receive a monetary reward:
 - You must be the first reporter of a vulnerability.
