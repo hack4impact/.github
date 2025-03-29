@@ -20,6 +20,8 @@ Closes #{ISSUE NUMBER HERE}
 - [ ] Branch is linked
 - [ ] Reviewers are assigned (one of your tech leads)
 
+Tip: You can make the issue and then check them after the fact or replace `[ ]` with `[x]` to check it!
+
 ### Notes
 
 {Any issues/suggestions relating to the ticket, repo, assignments, TL duties; please mention here!}
