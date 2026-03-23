@@ -15,7 +15,7 @@ Closes #{ISSUE NUMBER HERE}
 ### Checklist
 - [ ] Code is neat, readable, and works
 - [ ] Code is commented where appropriate and well-documented
-- [ ] Commit messages follow our [guidelines](https://www.conventionalcommits.com)
+- [ ] Commit messages follow our [guidelines](https://www.conventionalcommits.org)
 - [ ] Issue number is linked
 - [ ] Branch is linked
 - [ ] Reviewers are assigned (one of your tech leads)
