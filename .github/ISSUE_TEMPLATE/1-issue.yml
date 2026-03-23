@@ -7,7 +7,7 @@ body:
     id: branch
     attributes:
       label: Branch Name
-      description: Remember to follow [branch naming convention](https://www.hack4impact.org).
+      description: Remember to follow [branch naming convention](https://www.conventionalcommits.org).
       placeholder: "{feature|fix}/{issue-number}-branch-name"
   - type: textarea
     id: task
