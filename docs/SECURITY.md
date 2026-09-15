@@ -1,5 +1,7 @@
 ### Security Policy
 
+> Org members: the requirements you must follow (2FA, access model, forking policy) live in [Security Requirements for the Hack4Impact GitHub Org](SECURITY_REQUIREMENTS.md). This page is our vulnerability-disclosure policy for researchers.
+
 We believe that no technology is perfect and that working with skilled security researchers is crucial in identifying weaknesses.
 
 If you believe you've found a security bug in any of our projects, we'll be happy to work with you to resolve the issue promptly and ensure you are fairly rewarded for your discovery.
