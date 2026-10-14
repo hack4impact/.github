@@ -166,12 +166,12 @@ The core concepts are similar across providers, but each has nuances worth knowi
 - [ ] Cloud billing alerts are configured with the partner's contact information.  
 - [ ] Third-party service ownership (domains, APIs) is transferred to the partner.  
 - [ ] The minimal handoff package (Runbook, Cost/Budget Guardrails, Secrets Inventory) is completed. Every handed-off project repository must include these core deliverables:  
-      - [ ] **Infrastructure Blueprint:** Modular configurations (e.g., Terraform) or clean scripts that provision the stack reliably and idempotently.  
-      - [ ] **Runbook / Operations Guide:** Plain-language instructions: how to deploy new updates, check system logs, inspect errors, restart services, and restore backups. This should ideally be easy to follow for non-technical partners in any area possible.  
-      - [ ] **Training / Data Files:** AI/ML data files, training files, eval datasets, etc. so the partner can replicate the work later on if needed.  
-      - [ ] **Secrets & Access Inventory:** Every third-party service, domain, and credential the system depends on, who owns each one, and how to rotate it.  
-      - [ ] **Infra / Cost & Budget Guardrail Management:** A clear summary of expected monthly costs, links to active non-profit grant dashboards, and steps to update budget alert recipients.  
-      - [ ] **Disaster Recovery & Cleanup:** Clear steps to export data, restore from backups if an outage occurs, and decommission services cleanly if the tool is ever retired.
+  - [ ] **Infrastructure Blueprint:** Modular configurations (e.g., Terraform) or clean scripts that provision the stack reliably and idempotently.  
+  - [ ] **Runbook / Operations Guide:** Plain-language instructions: how to deploy new updates, check system logs, inspect errors, restart services, and restore backups. This should ideally be easy to follow for non-technical partners in any area possible.  
+  - [ ] **Training / Data Files:** AI/ML data files, training files, eval datasets, etc. so the partner can replicate the work later on if needed.  
+  - [ ] **Secrets & Access Inventory:** Every third-party service, domain, and credential the system depends on, who owns each one, and how to rotate it.  
+  - [ ] **Infra / Cost & Budget Guardrail Management:** A clear summary of expected monthly costs, links to active non-profit grant dashboards, and steps to update budget alert recipients.  
+  - [ ] **Disaster Recovery & Cleanup:** Clear steps to export data, restore from backups if an outage occurs, and decommission services cleanly if the tool is ever retired.
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAmklEQVR4Xu2NQQqAMAwEe/PsC/3/KxTFQjtJY9KCKDqwh243uyk9iNWpbljkVQgeR+WCR70yYXhUKlaIf1SJ9Sc+RSAAe6oufrx7iObISIZ9RyeNf0iDfR8aGhljT9VHs3eM96KHRhmaCr/FkmS5OrSTzRlvNVzAHCXQPjWPsJhSuQwosNjd4Q6esDxyK46sQ+asbBPPsSdzHxuDKhpsj0Dk1AAAAABJRU5ErkJggg==>
 
