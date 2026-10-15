@@ -8,12 +8,12 @@ Most partner organizations run with lean technical staff, tight budgets, and gra
 
 The single most important thing to understand upfront: the source code and the cloud infrastructure follow completely different ownership paths. Blurring these two together can lead into difficult handoffs.
 
-|                             | Source Code                                                                                                              | Cloud Infrastructure                                                                                               |
-| :-------------------------- | :----------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| **Where it lives**          | GitHub, always under [github.com/hack4impact](https://github.com/hack4impact)                                            | Can start in the H4I chapter's cloud account, but ultimately ends up fully in the partner's own cloud organization |
-| **Who owns it long-term**   | Hack4Impact retains the repository; the partner non-profit can continue maintenance in H4I repository or fork if needed. | The partner non-profit owns it outright after handoff                                                              |
-| **What happens at handoff** | The partner chooses to fork it, or to keep collaborating with H4I on the upstream repo                                   | The running system, billing, and admin access transfer completely to the partner                                   |
-| **Why**                     | Lets future H4I teams maintain, revive, or learn from the project                                                        | The partner must be able to run their tool without depending on us                                                 |
+|                             | Source Code                                                                                                             | Cloud Infrastructure                                                                                                                                         |
+| :-------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Where it lives**          | GitHub, always under [github.com/hack4impact](https://github.com/hack4impact)                                           | Can start in the H4I / chapter cloud accounts but must end up fully in the partner's own cloud organization during development or before handoff is complete |
+| **Who owns it long-term**   | Hack4Impact retains the repository; the partner non-profit can continue maintenance in H4I repository or fork if needed | The partner non-profit owns it outright after handoff                                                                                                        |
+| **What happens at handoff** | The partner chooses to fork it, or to keep collaborating with H4I on the upstream repo                                  | The running system, billing, and admin access transfer completely to the partner                                                                             |
+| **Why**                     | Lets future H4I teams maintain, revive, or learn from the project                                                       | The partner must be able to run their tool without depending on us                                                                                           |
 
 Keep these tracks mentally separate throughout the project. The code is our shared, reusable asset. The live system and its data belong to the partner.
 
@@ -24,7 +24,7 @@ Before writing a line of code or spinning up a cloud console, keep these common 
 - **The Credit Cliff**: It's easy to build using credits that expire in 12 months. If your architecture relies on services with high fixed base fees, the partner gets stuck with an unsustainable bill once those credits dry up. Design for long-term baseline affordability, not just the initial grant runway.
 - **Fragile Setup Scripts**: Loose terminal commands and unverified shell scripts tend to backfire. When a command fails midway, re-running it often crashes on resources that already exist. Aim for simple, modular Infrastructure as Code (IaC) or clean, repeatable steps anyone can re-run without fear of bad commands / lack of permissions mid-way leaving them stranded, etc.
 - **Account & Identity Lock-Out**: If you build everything inside our chapter's cloud account without planning ahead, transferring ownership later often means tearing it all down and rebuilding. Keep tenant boundaries clear from the start.
-- **The "Shadow Admin" Trap**: Never register domain names, DNS records, or third-party services (email providers, SMS gateways, payment processors, AI APIs) under a team member’s personal account or credit card. Everything should belong to a shared, partner owned organizational address (The organization this is built for, not H4I)
+- **The "Shadow Admin" Trap**: Never register domain names, DNS records, or third-party services (email providers, SMS gateways, payment processors, AI APIs) under a team member’s personal account or credit card. Students are not authorized to register domain names, DNS records, etc. on behalf of H4I or the nonprofit partner. If resources need to be spun up by Hack4Impact, contract the Nationals team to assist.
 - **Secrets in Git History**: A leaked API key is not fixed by deleting the file in the next commit. Once it's in history, treat it as compromised. **More on this below.**
 
 ## **💻 - Source Code: Rules of the Road**
@@ -85,13 +85,14 @@ Pick the architecture that does the job well. Be mindful to not introduce tech d
 - **Be Intentional with Datastores and Review the Base Cost**: Open the pricing calculator before provisioning any database or storage engine. Avoid enterprise-tier managed databases that charge hundreds of dollars a month just to sit idle. Lean toward lightweight managed databases with minimal baseline configurations, burstable tiers, or serverless pay-per-request options.
 - **Set Up Spending Alerts Early**: Configure billing alerts at sensible thresholds (50%, 75%, 90%, 100% of the expected monthly budget) so both the team and the partner's contact get warned well before a surprise. Where supported, wire up automation that can pause non-essential workloads if spending spikes.
 - **Understand compliance constraints upfront**: ask early about legal and regulatory requirements, health information privacy, student records, customer-managed encryption keys, geographic data residency. Catching these early avoids fundamental re-architecture later.
-- **Start Grant Applications Immediately**: Cloud non-profit programs (Google for Nonprofits, AWS Non-Profit Credit Program, Microsoft Tech for Social Impact) usually require verification through bodies like TechSoup, which can take 3–6 weeks. Help the partner kick this off on **Day 1**, not during handoff week.
 - **Document every provisioning step**: keep a living record of how the infrastructure was built. Ideally this means clean configuration files (Terraform or OpenTofu). If steps must be manual or CLI-driven, write a sequential checklist in Markdown:
   1. Creating the base project or resource group
   2. Enabling the necessary platform APIs and service providers
   3. Configuring networking, access rules, and firewall boundaries
   4. Setting up databases and storage buckets
   5. Configuring secrets, environment variables, and service deployments
+
+NOTE: - If interested, instruct the nonprofit to start grant applications as soon as possible for potential cloud credits: Cloud non-profit programs (Google for Nonprofits, AWS Non-Profit Credit Program, Microsoft Tech for Social Impact) usually require verification through bodies like TechSoup, which can take 3–6 weeks.
 
 ### Step 1: Development in H4I-Managed Projects
 
@@ -154,7 +155,7 @@ The core concepts are similar across providers, but each has nuances worth knowi
 ## **Minimal Handoff Package Checklist**
 
 - [ ] Infrastructure is fully transferred to the partner's cloud organization.
-- [ ] Project source code is in the Hack4Impact GitHub organization.
+- [ ] Project source code is in the Hack4Impact GitHub organization that is not dependent on any single student or engineer remaining on the project long-term.
 - [ ] A maintenance plan (continue upstream or self-maintain) has been agreed upon with the partner.
 - [ ] All infrastructure provisioning steps are documented (e.g., via Infrastructure as Code or sequential checklists).
 - [ ] Cloud billing alerts are configured with the partner's contact information.
